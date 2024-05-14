@@ -42,9 +42,9 @@ const Navbar = () => {
                                 <span><KeyboardArrowDownIcon/></span>
                             </a>
                             <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-48'>
-                                <li><a href="#about-us" className="block px-4 py-2 hover:bg-gray-200">About Us</a></li>
-                                <li><a href="#board-of-directors" className="block px-4 py-2 hover:bg-gray-200">Board of Directors</a></li>
-                                <li><a href="#board-of-advisory" className="block px-4 py-2 hover:bg-gray-200">Board of Advisory</a></li>
+                                <li><a href="#about-us" className="block px-4 py-2 hover:bg-green-300 hover:text-cyan-50">About Us</a></li>
+                                <li><a href="#board-of-directors" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Directors</a></li>
+                                <li><a href="#board-of-advisory" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Advisory</a></li>
                             </ul>
                         </li>
                         <li>What we do?</li>
@@ -53,10 +53,10 @@ const Navbar = () => {
                                 <span>Contact</span>
                                 <span><KeyboardArrowDownIcon/></span>
                             </a>
-                            <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2'>
-                                <li><a href="#contact-form" className="block px-4 py-2 hover:bg-gray-200">Blogs</a></li>
-                                <li><a href="#location" className="block px-4 py-2 hover:bg-gray-200">Contact US</a></li>
-                                <li><a href="#support" className="block px-4 py-2 hover:bg-gray-200">Volunteel</a></li>
+                            <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-48'>
+                                <li><a href="#contact-form" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50	">Blogs</a></li>
+                                <li><a href="#location" className="block px-4 py-2 hover:bg-green-300	 hover:text-cyan-50">Contact US</a></li>
+                                <li><a href="#support" className="block px-4 py-2 hover:bg-green-300	 hover:text-cyan-50">Volunteel</a></li>
                             </ul>
                         </li>
                     </ul>
