@@ -2,7 +2,7 @@ import React from 'react';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import Button from '@mui/material/Button';
-
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 const Navbar = () => {
     return (
         <>
@@ -28,37 +28,44 @@ const Navbar = () => {
 
             </header>
 
-            <header>
-                <div className='flex justify-between '>
-                    <div>
-                        <h1>ICONS</h1>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>Home</li>
-                            <li>
-                                <label htmlFor="about">About</label>
-                                <select name="about" id="about">
-                                    <option value="about"></option>
-                                    <option value="">Value1</option>
-                                    <option value="">Value2</option>
-                                    <option value="">Value3</option>
-
-                                </select>
-                            </li>
-                            <li>what we do?</li>
-                            <li>How We do?</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <Button variant="contained" href="#contained-buttons"> Donetion</Button>
-                    </div>
-
+            <header className='bg-gray-100 py-4'>
+            <div className='container mx-auto flex justify-between items-center'>
+                <div>
+                    <h1 className='text-2xl font-bold'>ICONS</h1>
                 </div>
-
-            </header>
-
+                <div>
+                    <ul className='flex space-x-8'>
+                        <li>Home</li>
+                        <li className='relative group'>
+                            <a href="https://nitichetna.com/about/" className="aux-item-content flex items-center">
+                                <span>About</span>
+                                <span><KeyboardArrowDownIcon/></span>
+                            </a>
+                            <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-48'>
+                                <li><a href="#about-us" className="block px-4 py-2 hover:bg-gray-200">About Us</a></li>
+                                <li><a href="#board-of-directors" className="block px-4 py-2 hover:bg-gray-200">Board of Directors</a></li>
+                                <li><a href="#board-of-advisory" className="block px-4 py-2 hover:bg-gray-200">Board of Advisory</a></li>
+                            </ul>
+                        </li>
+                        <li>What we do?</li>
+                        <li className='relative group'>
+                            <a href="https://nitichetna.com/contact/" className="aux-item-content flex items-center">
+                                <span>Contact</span>
+                                <span><KeyboardArrowDownIcon/></span>
+                            </a>
+                            <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2'>
+                                <li><a href="#contact-form" className="block px-4 py-2 hover:bg-gray-200">Blogs</a></li>
+                                <li><a href="#location" className="block px-4 py-2 hover:bg-gray-200">Contact US</a></li>
+                                <li><a href="#support" className="block px-4 py-2 hover:bg-gray-200">Volunteel</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <Button variant="contained" href="#contained-buttons">Donation</Button>
+                </div>
+            </div>
+        </header>
 
 
 
