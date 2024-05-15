@@ -3,6 +3,10 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import Button from '@mui/material/Button';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import NavbarModal from '../module/NavbarModal'
+import logo from '../assets/images/logoNav.png'
+
+
 const Navbar = () => {
     return (
         <>
@@ -29,43 +33,47 @@ const Navbar = () => {
             </header>
 
             <header className='bg-gray-100 py-4'>
-            <div className='container mx-auto flex justify-between items-center'>
-                <div>
-                    <h1 className='text-2xl font-bold'>ICONS</h1>
+                <div className='container mx-auto flex justify-between items-center'>
+                    <div>
+                    <img src={logo} alt="Logo" className='w-28' />
+                        <h1 className='text-2xl font-bold'>  </h1>
+                    </div>
+                    <div>
+                        <ul className=' space-x-8 lg:flex md:flex hidden '>
+                            <li>Home</li>
+                            <li className='relative group'>
+                                <a href="https://nitichetna.com/about/" className="aux-item-content flex items-center">
+                                    <span>About</span>
+                                    <span><KeyboardArrowDownIcon /></span>
+                                </a>
+                                <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-48 z-50 '>
+                                    <li><a href="#about-us" className="block px-4 py-2 hover:bg-green-300 hover:text-cyan-50">About Us</a></li>
+                                    <li><a href="#board-of-directors" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Directors</a></li>
+                                    <li><a href="#board-of-advisory" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Advisory</a></li>
+                                </ul>
+                            </li>
+                            <li>What we do?</li>
+                            <li className='relative group'>
+                                <a href="https://nitichetna.com/contact/" className="aux-item-content flex items-center">
+                                    <span>Contact</span>
+                                    <span><KeyboardArrowDownIcon /></span>
+                                </a>
+                                <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-48 z-50'>
+                                    <li><a href="#contact-form" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50	">Blogs</a></li>
+                                    <li><a href="#location" className="block px-4 py-2 hover:bg-green-300	 hover:text-cyan-50">Contact US</a></li>
+                                    <li><a href="#support" className="block px-4 py-2 hover:bg-green-300	 hover:text-cyan-50">Volunteel</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <Button variant="contained" href="#contained-buttons">Donation</Button>
+                    </div>
+                    <div className='lg:hidden md:hidden  w-full h-full flex justify-center con items-center'>
+                        <NavbarModal />
+                    </div>
                 </div>
-                <div>
-                    <ul className='flex space-x-8'>
-                        <li>Home</li>
-                        <li className='relative group'>
-                            <a href="https://nitichetna.com/about/" className="aux-item-content flex items-center">
-                                <span>About</span>
-                                <span><KeyboardArrowDownIcon/></span>
-                            </a>
-                            <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-48'>
-                                <li><a href="#about-us" className="block px-4 py-2 hover:bg-green-300 hover:text-cyan-50">About Us</a></li>
-                                <li><a href="#board-of-directors" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Directors</a></li>
-                                <li><a href="#board-of-advisory" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Advisory</a></li>
-                            </ul>
-                        </li>
-                        <li>What we do?</li>
-                        <li className='relative group'>
-                            <a href="https://nitichetna.com/contact/" className="aux-item-content flex items-center">
-                                <span>Contact</span>
-                                <span><KeyboardArrowDownIcon/></span>
-                            </a>
-                            <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-48'>
-                                <li><a href="#contact-form" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50	">Blogs</a></li>
-                                <li><a href="#location" className="block px-4 py-2 hover:bg-green-300	 hover:text-cyan-50">Contact US</a></li>
-                                <li><a href="#support" className="block px-4 py-2 hover:bg-green-300	 hover:text-cyan-50">Volunteel</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <Button variant="contained" href="#contained-buttons">Donation</Button>
-                </div>
-            </div>
-        </header>
+            </header>
 
 
 

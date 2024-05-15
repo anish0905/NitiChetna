@@ -68,18 +68,7 @@ const CarouselImage = () => {
           ))}
         </div>
       </div>
-      <button
-        onClick={handlePrev}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2"
-      >
-        Prev
-      </button>
-      <button
-        onClick={handleNext}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2"
-      >
-        Next
-      </button>
+     
     </div>
   );
 };
