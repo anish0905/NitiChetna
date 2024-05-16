@@ -3,8 +3,8 @@ import React from 'react'
 const Scheme = () => {
   return (
     <div className='text-center mt-5 '>
-      <h1>Choose your Scheme</h1>
-      <h1> Category</h1>
+      <h1 className=' text-custerText '>Choose your Scheme</h1>
+      <h1 className=' text-custerText '> Category</h1>
 
       {/* 1st row */}
       <div className='lg:flex md:flex block  justify-center items-center content-center gap-5 '>

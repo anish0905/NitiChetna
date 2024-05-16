@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         customGreen: '#C7FFC7',
-        custerText:' #007C24'
+        custerText:' #007C24',
+        customButton:'14B0B6',
       },
     },
   },

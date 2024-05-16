@@ -112,7 +112,8 @@ body {
 
 .post img {
   border-radius: 10px;
-  width: 100%;
+  /* width: 100%; */
+  width: 248rem;
   height: auto;
   margin-bottom: 10px;
 }

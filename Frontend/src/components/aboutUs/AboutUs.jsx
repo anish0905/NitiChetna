@@ -3,11 +3,11 @@ import aboutImg from '../assets/images/aboutUs.png'
 
 const AboutUs = () => {
   return (
-    <div className='bg-customGreen'>
-    <h2 className='text-center mt-10'>About Us</h2>
+    <div className='bg-customGreen '>
+    <h2 className='text-center mt-10 text-custerText font-bold text-5xl'>About Us</h2>
     <div className="flex flex-col sm:flex-row justify-between items-center sm:items-center gap-4 sm:gap-8 p-4">
-      <div className="sm:w-1/2 text-xl tracking-wide text-center sm:text-left">
-        <p className="mb-4">
+      <div className="sm:w-1/2 text-xl tracking-wide text-center sm:text-left ">
+        <p className="mb-4 text-justify">
           Established in 2020, Niti Chetna Foundation is an Indian development organization, impacting the lives of over 15 lakh children and their families every year. We have more than 400 projects on education, healthcare, livelihood, and women empowerment in over 2,000 remote villages and urban slums across 25 states of India.
         </p>
         <p>

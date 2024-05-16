@@ -7,6 +7,9 @@ import Home from '../src/Home'
 
 
 import PostDetail from './components/Blogs/PostDetail';
+import About from './pages/About';
+
+
 
 function App() {
   return (
@@ -19,11 +22,13 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/post/:id" element={<PostDetail />} />
           </Routes>
         </main>
 
       </Router>
+      
     </div>
   );
 }

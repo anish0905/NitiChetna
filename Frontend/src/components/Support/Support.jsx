@@ -6,7 +6,7 @@ const Support = () => {
 
 
    <div>
-    <h1>Support A Cause</h1>
+    <h1 className=' text-custerText  text-center mt-10 mb-9'>Support A Cause</h1>
    </div>
 
 

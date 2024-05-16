@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import posts from '../Blogs/posts';
+import ContactForm from '../contacts/ContectForm';
 
 const Post = () => {
   const { id } = useParams();
@@ -20,14 +21,14 @@ const Post = () => {
 
         </div>
         <div className=' flex justify-center items-center content-center text-center ' >
-         <div>
-         <h2>{post.title}</h2>
-          <p className="post-date">{post.date}</p>
+         <div className=' text-justify'>
+         <h2 className='text-center'>{post.title}</h2>
+          <p className="post-date ">{post.date}</p>
           <p className='mx-10'>{post.content}</p>
          </div>
         </div>
 
-   
+   <ContactForm/>
     </div>
   );
 };
