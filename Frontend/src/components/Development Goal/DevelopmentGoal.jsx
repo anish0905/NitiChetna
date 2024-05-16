@@ -207,7 +207,6 @@ const images = [
   require('../assets/images/10.webp'),
   require('../assets/images/17.webp')
   // Add more images as needed
-
 ];
 
 const DevelopmentGoal = () => {
@@ -267,7 +266,7 @@ const DevelopmentGoal = () => {
     const autoSlide = setInterval(() => {
       setCurrentIndex((prevIndex) => {
         const newIndex = prevIndex === images.length - 1 ? 0 : prevIndex + 1;
-        const newTranslate = -((window.innerWidth + window.innerWidth * 0.05) * newIndex);
+        const newTranslate = -(window.innerWidth + window.innerWidth * 0.05) * newIndex;
         setPrevTranslate(newTranslate);
         setCurrentTranslate(newTranslate);
         return newIndex;
@@ -297,9 +296,9 @@ const DevelopmentGoal = () => {
             key={index}
             src={image}
             alt={`Slide ${index}`}
-            className="h-full "
+            className="h-full"
             style={{
-              width: 'calc(100% - 50%)', // Adjust image width to accommodate the gap
+              width: 'calc(100% - 5%)', // Adjust image width to accommodate the gap
               maxWidth: 'calc(100% - 5%)'
             }}
           />

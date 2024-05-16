@@ -69,7 +69,7 @@ const Navbar = () => {
                     <div>
                         <Button variant="contained" href="#contained-buttons">Donation</Button>
                     </div>
-                    <div className='lg:hidden md:hidden  w-full h-full flex justify-center con items-center'>
+                    <div className='lg:hidden md:hidden   h-full flex justify-center con items-center w-10'>
                         <NavbarModal />
                     </div>
                 </div>

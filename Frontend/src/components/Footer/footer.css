@@ -1,0 +1,16 @@
+.footer-container {
+    padding: 50px 0; /* Add extra height */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly; /* Center content horizontally */
+    flex-wrap: wrap; /* Wrap content to two columns on small screens */
+}
+
+.footer-column {
+    flex:  200px; /* Set flexible width for each column */
+    margin: 10px; /* Add some margin */
+}
+
+/* Add more styling as needed */

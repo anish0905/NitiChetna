@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,95 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.header nav a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.post-list {
+  padding: 20px;
+}
+
+.post-preview {
+  margin-bottom: 20px;
+}
+
+.post-preview img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.post-preview h2 {
+  margin: 0;
+}
+
+.post-preview p {
+  margin: 5px 0;
+}
+
+.post-preview .post-date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.post-preview .read-more {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.post-preview .read-more:hover {
+  text-decoration: underline;
+}
+
+.post {
+  padding: 20px;
+}
+
+.post img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.post h2 {
+  margin: 0;
+}
+
+.post .post-date {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 20px;
+}
+

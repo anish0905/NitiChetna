@@ -2,7 +2,29 @@ import React from 'react'
 
 const Support = () => {
   return (
-    <div>Support</div>
+    <div>
+
+
+   <div>
+    <h1>Support A Cause</h1>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
   )
 }
 

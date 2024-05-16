@@ -1,30 +1,29 @@
+import React from 'react';
 
-// import ScrollToTop from './components/ScrollToTop'
-import Navbar from './components/NavBar/Navbar';
 import './App.css';
-import CarouselImage from './components/CarouselImage/CarouselImage';
-import CountDown from './components/CountDown/CountDown';
 
-import Scheme from './components/schemeCategory/Scheme';
-import AboutUs from './components/aboutUs/AboutUs';
-import DevelopmentGoal from './components/Development Goal/DevelopmentGoal';
-import Stories from './components/Stories/Stories';
-import Support from './components/Support/Support';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from '../src/Home'
+
+
+import PostDetail from './components/Blogs/PostDetail';
 
 function App() {
   return (
     <div>
-      {/* <ScrollToTop/> */}
-      <Navbar/>
-      <CarouselImage/>
-      <CountDown/>
-      <Scheme/>
-      <AboutUs/>
-      <DevelopmentGoal/>
-      <Stories/>
 
-      <Support/>
-     
+
+      <Router>
+
+        <main>
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/post/:id" element={<PostDetail />} />
+          </Routes>
+        </main>
+
+      </Router>
     </div>
   );
 }

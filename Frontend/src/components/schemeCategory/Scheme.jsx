@@ -42,7 +42,7 @@ const Scheme = () => {
               </span>
             </div>
             <div className='flex justify-center items-center w-full mt-2 '>
-              <p >
+              <p>
                 Banking, Financial <br /> Services
               </p>
             </div>

@@ -3,7 +3,7 @@ import aboutImg from '../assets/images/aboutUs.png'
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className='bg-customGreen'>
     <h2 className='text-center mt-10'>About Us</h2>
     <div className="flex flex-col sm:flex-row justify-between items-center sm:items-center gap-4 sm:gap-8 p-4">
       <div className="sm:w-1/2 text-xl tracking-wide text-center sm:text-left">
