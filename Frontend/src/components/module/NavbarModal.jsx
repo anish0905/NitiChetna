@@ -71,7 +71,7 @@ export default function NavbarModal() {
             <CloseIcon />
           </IconButton>
           <ul className='text-black p-20 text-2xl'>
-            <li>Home</li>
+            <li className="no-underline"><a href="http://localhost:3000">Home</a></li>
             <li className='relative'>
               <div 
                 className="aux-item-content flex items-center cursor-pointer" 
@@ -83,9 +83,9 @@ export default function NavbarModal() {
               <ul 
                 className={`transition-max-height duration-500 ease-in-out overflow-hidden ${openDropdown === 'about' ? 'max-h-screen' : 'max-h-0'}`}
               >
-                <li><a href="#about-us" className="block px-4 py-2 hover:bg-green-300 hover:text-cyan-50 text-black">About Us</a></li>
-                <li><a href="#board-of-directors" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Directors</a></li>
-                <li><a href="#board-of-advisory" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Advisory</a></li>
+                <li><a href="http://localhost:3000/about" className="block px-4 py-2 hover:bg-green-300 hover:text-cyan-50 text-black">About Us</a></li>
+                <li><a href="http://localhost:3000/boardofdirection" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Directors</a></li>
+                <li><a href="http://localhost:3000/boardofadvisiory" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Advisory</a></li>
               </ul>
             </li>
             <li>What we do?</li>
@@ -100,9 +100,9 @@ export default function NavbarModal() {
               <ul 
                 className={`transition-max-height duration-500 ease-in-out overflow-hidden ${openDropdown === 'contact' ? 'max-h-screen' : 'max-h-0'}`}
               >
-                <li><a href="#contact-form" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Blogs</a></li>
-                <li><a href="#location" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Contact Us</a></li>
-                <li><a href="#support" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Volunteer</a></li>
+                <li><a href="http://localhost:3000/blogspag" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Blogs</a></li>
+                <li><a href="http://localhost:3000/contactpag" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Contact Us</a></li>
+                <li><a href="http://localhost:3000/volunteer" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Volunteer</a></li>
               </ul>
             </li>
           </ul>

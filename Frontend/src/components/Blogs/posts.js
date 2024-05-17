@@ -5,9 +5,9 @@ import blogs3 from '../assets/images/Stories3.jpg';
 const posts = [
   {
     id: 1,
-    title: 'First Post',
-    excerpt: 'This is the first post...',
-    content: 'This is the full content of the first post.',
+    title: 'Choosing the right title for your project, article, or piece of content is crucial as it serves as the initial hook to attract your audience.',
+    excerpt: 'JavaScript (JS) is a versatile programming language...',
+    content: `JavaScript (JS) is a versatile programming language used primarily for web development. It enables dynamic behavior on web pages, allowing developers to create interactive elements, handle user input, and modify content in real-time without reloading the page. JS can run on both client-side (in web browsers) and server-side (with Node.js), offering broad compatibility. It supports a wide range of frameworks and libraries like React, Angular, and Vue.js, facilitating efficient development of complex applications. JavaScript's flexibility, speed, and extensive community support make it an essential tool for building modern web applications, ranging from simple websites to complex web-based software solutions.`,
     date: 'May 16, 2024',
     image: blogs1 // Corrected the image import
   },

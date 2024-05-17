@@ -8,7 +8,7 @@ const PostList = () => (
       <div key={post.id} className="mid-w-md rounded gap-4  shadow-lg">
         <img src={post.image} alt={post.title} className="w-full" />
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">{post.title}</div>
+          <div className="font-bold text-xl mb-2 ">{post.title}</div>
           <p className="text-gray-700 text-base">{post.excerpt}</p>
           <p className="text-gray-600 text-sm mt-2">{post.date}</p>
         </div>

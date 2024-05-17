@@ -5,7 +5,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 const Footer = () => {
     return (
-        <div className='footer-container bg-customGreen'>
+        <div className='footer-container bg-customGreen mt-10'>
             <div className='footer-content'>
                 <div>
                     <img src={footerImg} alt="" />
@@ -64,10 +64,10 @@ const Footer = () => {
                             <div className="footer-column mb-4">
                                 <ul>
                                     <h2 className="text-xl font-bold mb-2">NGO</h2>
-                                    <li className="mb-1"><a href="#">Home</a></li>
-                                    <li className="mb-1"><a href="#">About</a></li>
-                                    <li className="mb-1"><a href="#">Contact</a></li>
-                                    <li className="mb-1"><a href="#">Blog</a></li>
+                                    <li className="mb-1"><a href="http://localhost:3000">Home</a></li>
+                                    <li className="mb-1"><a href="http://localhost:3000/about">About</a></li>
+                                    <li className="mb-1"><a href="http://localhost:3000/contactpag">Contact</a></li>
+                                    <li className="mb-1"><a href="http://localhost:3000/blogspag">Blog</a></li>
                                 </ul>
                             </div>
                         </div>
