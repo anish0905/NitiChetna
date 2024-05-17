@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -33,20 +34,28 @@ const Navbar = () => {
         <div className='container mx-auto flex justify-between items-center'>
           <div>
             <img src={logo} alt="Logo" className='w-28' />
-            <h1 className='text-2xl font-bold'>  </h1>
+            <h1 className='text-2xl font-bold'> </h1>
           </div>
           <div>
-            <ul className=' space-x-8 lg:flex md:flex hidden '>
-              <li><a href="http://localhost:3000" className="aux-item-content flex items-center no-underline">Home</a></li>
+            <ul className='space-x-8 lg:flex md:flex hidden'>
+              <li>
+                <Link to="/" className="aux-item-content flex items-center no-underline">Home</Link>
+              </li>
               <li className='relative group'>
-                <a href="http://localhost:3000/about" className="aux-item-content flex items-center no-underline">
+                <Link to="/about" className="aux-item-content flex items-center no-underline">
                   <span>About</span>
                   <span><KeyboardArrowDownIcon /></span>
-                </a>
-                <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-52  z-50 no-underline'>
-                  <li><a href="http://localhost:3000/about" className="block px-4 py-2 no-underline hover:bg-green-300 hover:text-cyan-50 w-48">About Us</a></li>
-                  <li><a href="http://localhost:3000/boardofdirection" className="block px-4 py-2  hover:bg-green-300  hover:text-cyan-50 w-48 no-underline">Board of Directors</a></li>
-                  <li><a href="http://localhost:3000/boardofadvisiory" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50 w-48 no-underline">Board of Advisory</a></li>
+                </Link>
+                <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-52 z-50 no-underline'>
+                  <li>
+                    <Link to="/about" className="block px-4 py-2 no-underline hover:bg-green-300 hover:text-cyan-50 w-48">About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/boardofdirection" className="block px-4 py-2 hover:bg-green-300 hover:text-cyan-50 w-48 no-underline">Board of Directors</Link>
+                  </li>
+                  <li>
+                    <Link to="/boardofadvisiory" className="block px-4 py-2 hover:bg-green-300 hover:text-cyan-50 w-48 no-underline">Board of Advisory</Link>
+                  </li>
                 </ul>
               </li>
               <li>What we do?</li>
@@ -56,15 +65,21 @@ const Navbar = () => {
                   <span><KeyboardArrowDownIcon /></span>
                 </a>
                 <ul className='absolute hidden group-hover:block bg-white shadow-lg p-2 space-y-2 w-48 z-50 no-underline'>
-                  <li><a href="http://localhost:3000/blogspag" className="block px-4 py-2 hover:bg-green-300 no-underline hover:text-cyan-50	">Blogs</a></li>
-                  <li><a href="http://localhost:3000/contactpag" className="block px-4 py-2 hover:bg-green-300 no-underline	 hover:text-cyan-50">Contact US</a></li>
-                  <li><a href="http://localhost:3000/volunteer" className="block px-4 py-2 hover:bg-green-300 no-underline	 hover:text-cyan-50">Volunteel</a></li>
+                  <li>
+                    <Link to="/blogspag" className="block px-4 py-2 hover:bg-green-300 no-underline hover:text-cyan-50">Blogs</Link>
+                  </li>
+                  <li>
+                    <Link to="/contactpag" className="block px-4 py-2 hover:bg-green-300 no-underline hover:text-cyan-50">Contact Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/volunteer" className="block px-4 py-2 hover:bg-green-300 no-underline hover:text-cyan-50">Volunteer</Link>
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
           <a href="https://pages.razorpay.com/pl_NUjg9PlvR8znaV/view" className="bg-green-300 hover:bg-green-400 no-underline text-black font-bold py-2 px-4 rounded">Donation</a>
-          <div className='lg:hidden md:hidden   h-full flex justify-center con items-center w-10'>
+          <div className='lg:hidden md:hidden h-full flex justify-center con items-center w-10'>
             <NavbarModal />
           </div>
         </div>

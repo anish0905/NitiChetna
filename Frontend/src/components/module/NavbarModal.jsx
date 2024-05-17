@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import { FaBars } from 'react-icons/fa';
@@ -21,6 +22,10 @@ export default function NavbarModal() {
 
   const handleDropdownToggle = (dropdown) => {
     setOpenDropdown(openDropdown === dropdown ? null : dropdown);
+  };
+
+  const handleLinkClick = () => {
+    handleClose();
   };
 
   return (
@@ -71,7 +76,9 @@ export default function NavbarModal() {
             <CloseIcon />
           </IconButton>
           <ul className='text-black p-20 text-2xl'>
-            <li className="no-underline"><a href="http://localhost:3000">Home</a></li>
+            <li className="no-underline">
+              <Link to="/" onClick={handleLinkClick}>Home</Link>
+            </li>
             <li className='relative'>
               <div 
                 className="aux-item-content flex items-center cursor-pointer" 
@@ -83,9 +90,15 @@ export default function NavbarModal() {
               <ul 
                 className={`transition-max-height duration-500 ease-in-out overflow-hidden ${openDropdown === 'about' ? 'max-h-screen' : 'max-h-0'}`}
               >
-                <li><a href="http://localhost:3000/about" className="block px-4 py-2 hover:bg-green-300 hover:text-cyan-50 text-black">About Us</a></li>
-                <li><a href="http://localhost:3000/boardofdirection" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Directors</a></li>
-                <li><a href="http://localhost:3000/boardofadvisiory" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Board of Advisory</a></li>
+                <li>
+                  <Link to="/about" className="block px-4 py-2 hover:bg-green-300 hover:text-cyan-50 text-black" onClick={handleLinkClick}>About Us</Link>
+                </li>
+                <li>
+                  <Link to="/boardofdirection" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50" onClick={handleLinkClick}>Board of Directors</Link>
+                </li>
+                <li>
+                  <Link to="/boardofadvisiory" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50" onClick={handleLinkClick}>Board of Advisory</Link>
+                </li>
               </ul>
             </li>
             <li>What we do?</li>
@@ -100,9 +113,15 @@ export default function NavbarModal() {
               <ul 
                 className={`transition-max-height duration-500 ease-in-out overflow-hidden ${openDropdown === 'contact' ? 'max-h-screen' : 'max-h-0'}`}
               >
-                <li><a href="http://localhost:3000/blogspag" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Blogs</a></li>
-                <li><a href="http://localhost:3000/contactpag" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Contact Us</a></li>
-                <li><a href="http://localhost:3000/volunteer" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50">Volunteer</a></li>
+                <li>
+                  <Link to="/blogspag" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50" onClick={handleLinkClick}>Blogs</Link>
+                </li>
+                <li>
+                  <Link to="/contactpag" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50" onClick={handleLinkClick}>Contact Us</Link>
+                </li>
+                <li>
+                  <Link to="/volunteer" className="block px-4 py-2 hover:bg-green-300  hover:text-cyan-50" onClick={handleLinkClick}>Volunteer</Link>
+                </li>
               </ul>
             </li>
           </ul>
